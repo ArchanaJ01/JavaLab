@@ -1,0 +1,24 @@
+//java program to add two numbers.
+
+
+SOURCE CODE
+-----------
+
+import java.io.*;
+public class Sum
+{
+    public static void main(String args[])
+    {
+        int a=5,b=3;
+        int S =a+b;
+        System.out.println("Sum="+S);
+    }
+}
+
+
+
+OUTPUT:
+``````
+$javac Sum.java
+$java -Xmx128M -Xms16M Sum
+Sum=8

@@ -1,0 +1,22 @@
+//java program to print "hello world".
+
+
+SOURCE CODE
+-----------
+
+import java.io.*;
+public class Name
+{
+    public static void main (String args[])
+    {
+        System.out.println("Hello World");
+    }
+}
+
+
+
+OUTPUT:
+``````
+$javac Name.java
+$java -Xmx128M -Xms16M Name
+Hello World

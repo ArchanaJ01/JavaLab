@@ -1,0 +1,45 @@
+//java program to check given number is palindrome or not.
+
+
+SOURCE CODE
+-----------
+
+import java.io.*;
+import java.util.Scanner;
+public class Palindrome
+{
+    public static void main(String args[])
+    {
+        int a,rem,rev=0,t;
+        System.out.println("Enter the number :");
+        Scanner v=new Scanner(System.in);
+        a=v.nextInt();
+        t=a;
+        while(a>0)
+        {
+            rem=a%10;
+            rev=(rev*10)+rem;
+            a=a/10;
+        }
+        System.out.println("The reversed number is :"+rev);
+        if(t==rev)
+        {
+            System.out.println("The number is palindrome .");
+            
+        }
+        else
+        {
+            System.out.println("The number is not palindrome .");
+        }
+    }
+}
+
+
+
+OUTPUT:
+```````
+$javac Palindrome.java
+$java -Xmx128M -Xms16M Palindrome
+Enter the number :212
+The reversed number is :212
+The number is palindrome .

@@ -1,0 +1,44 @@
+//java program to print fibonacci series.
+
+
+SOURCE CODE
+-----------
+
+import java.io.*;
+import java.util.Scanner;
+public class Fibonacci
+{
+    public static void main(String args[])
+    {
+        int f=0,s=1,n,t;
+        System.out.println("Enter the number :");
+        Scanner v=new Scanner(System.in);
+        t=v.nextInt();
+        for(int i=1;i<=t;i++)
+        {
+            System.out.println(f);
+            n=f+s;
+            f=s;
+            s=n;
+        }
+    }
+}
+
+
+
+OUTPUT:
+```````
+$javac Fibonacci.java
+$java -Xmx128M -Xms16M Fibonacci
+Enter the number :10
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+

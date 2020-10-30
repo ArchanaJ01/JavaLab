@@ -1,0 +1,39 @@
+//java program to find the factor of a given number .
+
+
+SOURCE CODE
+-----------
+
+import java.io.*;
+import java.util.Scanner;
+public class Factor
+{
+    public static void main(String args[])
+    {
+        int a;
+        System.out.println("Enter the number :");
+        Scanner v=new Scanner(System.in);
+        a=v.nextInt();
+        System.out.println("The factors of the given number are :");
+        for(int i=1;i<=a;i++)
+        {
+            if(a%i==0)
+            {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+
+
+OUTPUT:
+``````
+$javac Factor.java
+$java -Xmx128M -Xms16M Factor
+Enter the number :10
+The factors of the given number are :
+1
+2
+5
+10

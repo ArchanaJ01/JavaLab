@@ -1,0 +1,34 @@
+//java program to check given number is odd or even .
+
+
+SOURCE CODE
+-----------
+
+import java.io.*;
+import java.util.Scanner;
+public class OddEven
+{
+    public static void main(String args[])
+    {
+        int a;
+        System.out.println("Enter the number :");
+        Scanner v=new Scanner(System.in);
+        a=v.nextInt();
+        if(a%2==0)
+        {
+            System.out.println("The number is even .");
+        }
+        else
+        {
+            System.out.println("The number is odd .");
+        }
+    }
+}
+
+
+OUTPUT:
+```````
+$javac OddEven.java
+$java -Xmx128M -Xms16M OddEven
+Enter the number :133
+The number is odd .
